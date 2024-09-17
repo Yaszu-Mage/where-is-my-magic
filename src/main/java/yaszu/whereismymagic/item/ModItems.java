@@ -3,6 +3,7 @@ package yaszu.whereismymagic.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -18,6 +19,7 @@ public class ModItems {
     public static final Item SPONGE_BONG = registerItem("sponge_bong", new Item(new FabricItemSettings()));
     public static final Item BLEACH = registerItem("bleach", new Item(new FabricItemSettings().food((FoodComponents.POISONOUS_POTATO))));
     public static final Item RAW_CRACK = registerItem("raw_crack", new Item(new FabricItemSettings()));
+    public static final Item WINDEX = registerItem("windex", new Item(new FabricItemSettings().food(FoodComponents.HONEY_BOTTLE)));
 
     private static void addItemstoIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(MANA_DUST);

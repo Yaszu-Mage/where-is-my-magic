@@ -1,0 +1,38 @@
+{
+  "parent": "minecraft:story/upgrade_tools",
+  "criteria": {
+    "iron": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "where-is-my-magic:crack"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.story.get_crack.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "where-is-my-magic:crack"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.story.get_crack.title"
+    }
+  },
+  "requirements": [
+    [
+      "iron"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

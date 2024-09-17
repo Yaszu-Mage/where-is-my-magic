@@ -1,4 +1,4 @@
-package yaszu.whereismymagic.item;
+ package yaszu.whereismymagic.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -18,7 +18,6 @@ public class ModItems {
     public static final Item CRACK = registerItem("crack", new Item(new FabricItemSettings().food((FoodComponents.SUSPICIOUS_STEW))));
     public static final Item SPONGE_BONG = registerItem("sponge_bong", new Item(new FabricItemSettings()));
     public static final Item BLEACH = registerItem("bleach", new Item(new FabricItemSettings().food((FoodComponents.POISONOUS_POTATO))));
-    public static final Item RAW_CRACK = registerItem("raw_crack", new Item(new FabricItemSettings()));
     public static final Item WINDEX = registerItem("windex", new Item(new FabricItemSettings().food(FoodComponents.HONEY_BOTTLE)));
 
     private static void addItemstoIngredientTabItemGroup(FabricItemGroupEntries entries){
@@ -26,7 +25,7 @@ public class ModItems {
         entries.add(CRACK);
         entries.add(SPONGE_BONG);
         entries.add(BLEACH);
-        entries.add(RAW_CRACK);
+        entries.add(WINDEX);
     }
 
 

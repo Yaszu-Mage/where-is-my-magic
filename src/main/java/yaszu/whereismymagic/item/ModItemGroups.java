@@ -15,14 +15,15 @@ public class ModItemGroups {
 
     public static final ItemGroup MAGIC_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(WhereIsMyMagic.MOD_ID, "magic"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.magic"))
+            FabricItemGroup.builder().displayName(Text.translatable("item_group.where-is-my-magic.magic"))
                     .icon(() -> new ItemStack(ModItems.CRACK)).entries((displayContext, entries) ->  {
                     entries.add(ModItems.CRACK);
                     entries.add(ModItems.BLEACH);
                     entries.add(ModItems.MANA_DUST);
                     entries.add(ModItems.SPONGE_BONG);
-                    entries.add(ModItems.RAW_CRACK);
+                    entries.add(ModBlocks.RAW_CRACK);
                     entries.add(ModBlocks.CRACK_BLOCK);
+                    entries.add(ModItems.WINDEX);
                     }).build());
 
 

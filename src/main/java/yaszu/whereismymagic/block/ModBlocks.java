@@ -15,7 +15,8 @@ public class ModBlocks {
 
     public static final Block CRACK_BLOCK = registerBlock("crack_block",
             new Block(FabricBlockSettings.copy(Blocks.HAY_BLOCK)));
-
+    public static final Block RAW_CRACK = registerBlock("raw_crack_block",
+            new Block(FabricBlockSettings.copy(Blocks.IRON_ORE)));
     public static void registerModBlocks() {
         WhereIsMyMagic.LOGGER.info("Registering Modblocks for " + WhereIsMyMagic.MOD_ID);
     }

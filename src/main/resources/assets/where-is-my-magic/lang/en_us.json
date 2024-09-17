@@ -3,5 +3,7 @@
   "item.where-is-my-magic.crack" : "Crack",
   "item.where-is-my-magic.sponge_bong" : "Sponge Bong",
   "item.where-is-my-magic.bleach" : "Bleach",
-  "item.where-is-my-magic.raw_crack" : "Raw Crack"
+  "item.where-is-my-magic.raw_crack" : "Raw Crack",
+  "itemgroup.where-is-my-magic.magic" : "Where is my Magic"
+
 }

@@ -16,7 +16,11 @@ public class ModItemGroups {
             new Identifier(WhereIsMyMagic.MOD_ID, "magic"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.magic"))
                     .icon(() -> new ItemStack(ModItems.CRACK)).entries((displayContext, entries) ->  {
-
+                    entries.add(ModItems.CRACK);
+                    entries.add(ModItems.BLEACH);
+                    entries.add(ModItems.MANA_DUST);
+                    entries.add(ModItems.SPONGE_BONG);
+                    entries.add(ModItems.RAW_CRACK);
                     }).build());
 
 

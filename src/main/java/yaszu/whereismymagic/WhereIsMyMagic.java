@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import yaszu.whereismymagic.item.ModItemGroups;
 import yaszu.whereismymagic.item.ModItems;
 
 public class WhereIsMyMagic implements ModInitializer {
@@ -21,5 +22,8 @@ public class WhereIsMyMagic implements ModInitializer {
 		// Proceed with mild caution.
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
+
 	}
 }

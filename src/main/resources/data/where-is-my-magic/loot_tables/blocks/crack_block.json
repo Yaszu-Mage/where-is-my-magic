@@ -8,7 +8,7 @@
           "condition" : "minecraft:survives_explosion"
         }
       ],
-      "entires": [
+      "entries": [
         {
           "type": "minecraft:item",
           "name" : "where-is-my-magic:crack_block"

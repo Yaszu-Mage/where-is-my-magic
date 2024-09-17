@@ -9,6 +9,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.slf4j.LoggerFactory;
 import yaszu.whereismymagic.WhereIsMyMagic;
+import yaszu.whereismymagic.block.ModBlocks;
 
 public class ModItemGroups {
 
@@ -21,6 +22,7 @@ public class ModItemGroups {
                     entries.add(ModItems.MANA_DUST);
                     entries.add(ModItems.SPONGE_BONG);
                     entries.add(ModItems.RAW_CRACK);
+                    entries.add(ModBlocks.CRACK_BLOCK);
                     }).build());
 
 

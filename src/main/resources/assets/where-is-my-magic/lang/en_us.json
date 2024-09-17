@@ -4,7 +4,7 @@
   "item.where-is-my-magic.sponge_bong" : "Sponge Bong",
   "item.where-is-my-magic.bleach" : "Bleach",
   "item.where-is-my-magic.raw_crack" : "Raw Crack",
-  "itemgroup.where-is-my-magic.magic" : "Where is my Magic",
+  "item_group.where-is-my-magic.magic" : "Where is my Magic",
   "advancements.story.get_crack.description": "OOOO FUNNY MATERIAL",
   "advancements.story.get_crack.title": "Can I snort it?"
 }

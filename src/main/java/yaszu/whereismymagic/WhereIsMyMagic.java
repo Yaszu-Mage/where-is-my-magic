@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import yaszu.whereismymagic.block.ModBlocks;
 import yaszu.whereismymagic.item.ModItemGroups;
 import yaszu.whereismymagic.item.ModItems;
 

@@ -31,7 +31,7 @@
   },
   "requirements": [
     [
-      "iron"
+      "crack"
     ]
   ],
   "sends_telemetry_event": true

@@ -1,10 +1,13 @@
 {
   "item.where-is-my-magic.mana_dust" : "Mana_Dust",
+  "item.where-is-my-magic.windex" : "Windex",
   "item.where-is-my-magic.crack" : "Crack",
   "item.where-is-my-magic.sponge_bong" : "Sponge Bong",
   "item.where-is-my-magic.bleach" : "Bleach",
-  "item.where-is-my-magic.raw_crack" : "Raw Crack",
+  "block.where-is-my-magic.raw_crack" : "Raw Crack",
   "item_group.where-is-my-magic.magic" : "Where is my Magic",
+  "item.where-is-my-magic.crack_pickaxe": "Crack Pickaxe",
   "advancements.story.get_crack.description": "OOOO FUNNY MATERIAL",
-  "advancements.story.get_crack.title": "Can I snort it?"
+  "advancements.story.get_crack.title": "Can I snort it?",
+  "block.where-is-my-magic.crack_block" : "Crack Block"
 }

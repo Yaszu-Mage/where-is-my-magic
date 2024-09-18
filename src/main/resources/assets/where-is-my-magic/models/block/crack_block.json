@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "where-is-my-magic:block/crack_block"
+  }
+}

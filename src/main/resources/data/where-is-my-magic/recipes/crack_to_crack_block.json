@@ -1,15 +1,14 @@
 {
-  "type" : "minecraft:crafting_shaped",
-  "category" : "misc",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
-  "key": {
-    "#": {
-      "item" : "where-is-my-magic:crack"
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "crack",
+  "ingredients": [
+    {
+      "item": "where-is-my-magic:crack_block"
     }
-  },
-  "result": "where-is-my-magic:crack_block"
+  ],
+  "result": {
+    "count": 9,
+    "item": "where-is-my-magic:crack"
+  }
 }

@@ -3,13 +3,11 @@
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.FoodComponents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import yaszu.whereismymagic.Tools.ModTools;
 import yaszu.whereismymagic.WhereIsMyMagic;
 
 public class ModItems {
@@ -20,6 +18,8 @@ public class ModItems {
     public static final Item BLEACH = registerItem("bleach", new Item(new FabricItemSettings().food((FoodComponents.POISONOUS_POTATO))));
     public static final Item WINDEX = registerItem("windex", new Item(new FabricItemSettings().food(FoodComponents.HONEY_BOTTLE)));
 
+
+    public static final Item CRACK_PICKAXE = registerItem("crack_pickaxe", new PickaxeItem(ModTools.CRACK, 2, 2f, new FabricItemSettings()));
     private static void addItemstoIngredientTabItemGroup(FabricItemGroupEntries entries){
         entries.add(MANA_DUST);
         entries.add(CRACK);

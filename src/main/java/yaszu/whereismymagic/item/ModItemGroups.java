@@ -24,6 +24,7 @@ public class ModItemGroups {
                     entries.add(ModBlocks.RAW_CRACK);
                     entries.add(ModBlocks.CRACK_BLOCK);
                     entries.add(ModItems.WINDEX);
+                    entries.add(ModItems.CRACK_PICKAXE);
                     }).build());
 
 

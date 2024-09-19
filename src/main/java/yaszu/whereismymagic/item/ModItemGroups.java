@@ -25,6 +25,11 @@ public class ModItemGroups {
                     entries.add(ModBlocks.CRACK_BLOCK);
                     entries.add(ModItems.WINDEX);
                     entries.add(ModItems.CRACK_PICKAXE);
+                    entries.add(ModBlocks.MARBEL);
+                    entries.add(ModBlocks.POLISHED_MARBEL);
+                    entries.add(ModItems.METAL_DETECTOR);
+                    entries.add(ModItems.CRACK_STAFF);
+                    entries.add(ModItems.CRACK_HELMET);
                     }).build());
 
 

@@ -3,13 +3,14 @@ package yaszu.whereismymagic.Tools;
 import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import yaszu.whereismymagic.block.ModBlocks;
 import yaszu.whereismymagic.item.ModItems;
 
 import java.util.function.Supplier;
 
 public enum ModTools implements ToolMaterial {
-    CRACK(MiningLevels.IRON,455,4.5f,3.5f,26, () -> Ingredient.ofItems(ModItems.CRACK));
-
+    CRACK(MiningLevels.IRON,455,4.5f,3.5f,26, () -> Ingredient.ofItems(ModItems.CRACK)),
+    MARBEL(MiningLevels.STONE,255,3.5f,3.5f,26, () -> Ingredient.ofItems(ModBlocks.MARBEL));
     private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;

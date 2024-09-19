@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "!": {
+      "item": "minecraft:sponge"
+    },
+    "*": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "## ",
+    "#!*",
+    "###"
+  ],
+  "result": {
+    "item": "where-is-my-magic:sponge_bong"
+  },
+  "show_notification": true
+}

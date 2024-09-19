@@ -10,7 +10,10 @@ import java.util.function.Supplier;
 
 public enum ModTools implements ToolMaterial {
     CRACK(MiningLevels.IRON,455,4.5f,3.5f,26, () -> Ingredient.ofItems(ModItems.CRACK)),
-    MARBEL(MiningLevels.STONE,255,3.5f,3.5f,26, () -> Ingredient.ofItems(ModBlocks.MARBEL));
+    MARBEL(MiningLevels.STONE,255,3.5f,3.5f,26, () -> Ingredient.ofItems(ModBlocks.MARBEL)),
+    HUMAN(MiningLevels.STONE,1000,10.5f,1.0f,32, () -> Ingredient.ofItems(ModItems.HUMAN_FLESH)),
+    VOID(MiningLevels.NETHERITE, 1987, 10.5f,8.0f,28,() -> Ingredient.ofItems(ModItems.VOID_INGOT));
+
     private final int miningLevel;
     private final int itemDurability;
     private final float miningSpeed;

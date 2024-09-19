@@ -29,7 +29,7 @@ public class MetalDetectorItem extends Item {
                     break;
                 }
             }
-            player.sendMessage(Text.literal("You didnt't Find Shit Dumbass"), false);
+            player.sendMessage(Text.literal("You didn't Find Shit Dumbass"), false);
         }
         context.getStack().damage(1, context.getPlayer(),
                 playerEntity -> playerEntity.sendToolBreakStatus(playerEntity.getActiveHand()));

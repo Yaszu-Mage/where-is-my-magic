@@ -26,6 +26,9 @@ import yaszu.whereismymagic.item.custom.sponge_bong;
 
     public static final Item CRACK_STAFF = registerItem("crack_staff", new CrackStaff(new FabricItemSettings().maxDamage(128).maxCount(1)));
     public static final Item METAL_DETECTOR = registerItem("metal_detector", new MetalDetectorItem(new FabricItemSettings().maxDamage(128).maxCount(1)));
+    public static final Item HUMAN_FLESH = registerItem("human_flesh", new Item(new FabricItemSettings().food(FoodComponents.BEEF)));
+    public static final Item SKIBIDI = registerItem("skibidi", new Item(new FabricItemSettings()));
+    public static final Item VOID_INGOT = registerItem("void_ingot", new Item(new FabricItemSettings()));
 
 
     public static final Item CRACK_HELMET = registerItem("crack_helmet", new ArmorItem(ModArmor.Crack,ArmorItem.Type.HELMET ,new Item.Settings()));

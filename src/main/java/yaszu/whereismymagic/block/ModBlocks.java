@@ -23,6 +23,10 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copy(Blocks.STONE)));
     public static final Block POLISHED_MARBEL = registerBlock("polished_marbel",
             new Block(FabricBlockSettings.copy(Blocks.POLISHED_ANDESITE)));
+    public static final Block NUKE = registerBlock("nuke",
+            new Block(FabricBlockSettings.copy(Blocks.TNT)));
+    public static final Block RAW_VOID = registerBlock("raw_void",
+            new Block(FabricBlockSettings.copy(Blocks.OBSIDIAN)));
     public static void registerModBlocks() {
         WhereIsMyMagic.LOGGER.info("Registering Modblocks for " + WhereIsMyMagic.MOD_ID);
     }

@@ -12,6 +12,8 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import yaszu.whereismymagic.item.ModItems;
 
+import java.util.Objects;
+
 public class sponge_bong extends Item {
     public sponge_bong(Settings settings){
         super(settings);
@@ -24,10 +26,8 @@ public class sponge_bong extends Item {
         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,50,1));
         entity.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 50,1));
         if (stack.isOf(ModItems.SPONGE_BONG_ACTIVE)) {
-            if (stack.isOf(ModItems.SPONGE_BONG_ACTIVE)) {
-                stack.setCount(0);
-                user.giveItemStack(ModItems.SPONGE_BONG.getDefaultStack());
-            }
+            stack.setCount(0);
+            user.giveItemStack(ModItems.SPONGE_BONG.getDefaultStack());
             return ActionResult.SUCCESS;
         }else{
             return ActionResult.FAIL;
@@ -37,7 +37,7 @@ public class sponge_bong extends Item {
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         if (context.getWorld().getBlockState(context.getBlockPos()).isOf(Blocks.AIR)) {
-            context.getPlayer().addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,50,1));
+            Objects.requireNonNull(context.getPlayer()).addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,50,1));
             context.getPlayer().addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED, 50,1));
             if (context.getStack().isOf(ModItems.SPONGE_BONG_ACTIVE)) {
                 context.getStack().setCount(0);

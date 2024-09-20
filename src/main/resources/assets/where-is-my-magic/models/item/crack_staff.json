@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "where-is-my-magic:item/crack_staff"
+  }
+}

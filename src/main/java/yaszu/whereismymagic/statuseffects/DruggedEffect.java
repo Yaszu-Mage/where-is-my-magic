@@ -22,7 +22,4 @@ public class DruggedEffect extends StatusEffect {
         return super.isInstant();
     }
 
-    public boolean applyUpdateEffect(LivingEntity entity, int amplifier) {
-
-    }
 }

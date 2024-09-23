@@ -2,11 +2,20 @@ package yaszu.whereismymagic;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.minecraft.client.render.entity.model.EntityModelLayer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import yaszu.whereismymagic.block.ModBlocks;
 import yaszu.whereismymagic.item.ModItemGroups;
 import yaszu.whereismymagic.item.ModItems;
+import yaszu.whereismymagic.mobs.ModEntities;
+import yaszu.whereismymagic.mobs.client.ModModelLayers;
+import yaszu.whereismymagic.mobs.client.Rug;
+import yaszu.whereismymagic.mobs.client.RugRenderer;
+import yaszu.whereismymagic.mobs.custom.RugEntity;
 
 public class WhereIsMyMagic implements ModInitializer {
 	public static final String MOD_ID = "where-is-my-magic";
@@ -25,6 +34,9 @@ public class WhereIsMyMagic implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+		FabricDefaultAttributeRegistry.register(ModEntities.RUG, RugEntity.createRugAttributes());
+		EntityRendererRegistry.register(ModEntities.RUG,RugRenderer::new);
+		
 
 	}
 }

@@ -30,6 +30,7 @@ public class ModItemGroups {
                     entries.add(ModItems.METAL_DETECTOR);
                     entries.add(ModItems.CRACK_STAFF);
                     entries.add(ModItems.CRACK_HELMET);
+                    entries.add(ModItems.ESTROGEN);
                     }).build());
 
 

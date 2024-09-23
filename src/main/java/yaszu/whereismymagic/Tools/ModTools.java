@@ -12,7 +12,8 @@ public enum ModTools implements ToolMaterial {
     CRACK(MiningLevels.IRON,455,4.5f,3.5f,26, () -> Ingredient.ofItems(ModItems.CRACK)),
     MARBEL(MiningLevels.STONE,255,3.5f,3.5f,26, () -> Ingredient.ofItems(ModBlocks.MARBEL)),
     HUMAN(MiningLevels.STONE,1000,10.5f,1.0f,32, () -> Ingredient.ofItems(ModItems.HUMAN_FLESH)),
-    VOID(MiningLevels.NETHERITE, 1987, 10.5f,8.0f,28,() -> Ingredient.ofItems(ModItems.VOID_INGOT));
+    VOID(MiningLevels.NETHERITE, 1987, 10.5f,8.0f,28,() -> Ingredient.ofItems(ModItems.VOID_INGOT)),
+    COBALT(MiningLevels.DIAMOND, 888,5.5f,8.0f, 26, () -> Ingredient.ofItems(ModItems.Cobalt));
 
     private final int miningLevel;
     private final int itemDurability;

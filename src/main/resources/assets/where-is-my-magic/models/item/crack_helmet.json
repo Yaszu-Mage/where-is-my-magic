@@ -1,0 +1,69 @@
+{
+  "parent": " where-is-my-magic:item/generated",
+  "overrides": [
+    {
+      "model": " where-is-my-magic:item/crack_helmet_quartz_trim",
+      "predicate": {
+        "trim_type": 0.1
+      }
+    },
+    {
+      "model": " where-is-my-magic:item/crack_helmet_crack_darker_trim",
+      "predicate": {
+        "trim_type": 0.2
+      }
+    },
+    {
+      "model": " where-is-my-magic:item/crack_helmet_netherite_trim",
+      "predicate": {
+        "trim_type": 0.3
+      }
+    },
+    {
+      "model": " where-is-my-magic:item/crack_helmet_redstone_trim",
+      "predicate": {
+        "trim_type": 0.4
+      }
+    },
+    {
+      "model": " where-is-my-magic:item/crack_helmet_copper_trim",
+      "predicate": {
+        "trim_type": 0.5
+      }
+    },
+    {
+      "model": " where-is-my-magic:item/crack_helmet_gold_trim",
+      "predicate": {
+        "trim_type": 0.6
+      }
+    },
+    {
+      "model": " where-is-my-magic:item/crack_helmet_emerald_trim",
+      "predicate": {
+        "trim_type": 0.7
+      }
+    },
+    {
+      "model": " where-is-my-magic:item/crack_helmet_diamond_trim",
+      "predicate": {
+        "trim_type": 0.8
+      }
+    },
+    {
+      "model": " where-is-my-magic:item/crack_helmet_lapis_trim",
+      "predicate": {
+        "trim_type": 0.9
+      }
+    },
+    {
+      "model": " where-is-my-magic:item/crack_helmet_amethyst_trim",
+      "predicate": {
+        "trim_type": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "where-is-my-magic:item/models/armor/crack_layer_1",
+    "layer1" : "where-is-my-magic:item/models/armor/crack_layer_2"
+  }
+}

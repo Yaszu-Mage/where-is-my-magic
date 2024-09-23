@@ -27,6 +27,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copy(Blocks.TNT)));
     public static final Block RAW_VOID = registerBlock("raw_void",
             new Block(FabricBlockSettings.copy(Blocks.OBSIDIAN)));
+    public static final Block GUNPOWDER = registerBlock("gunpowder",
+            new Block(FabricBlockSettings.copy(Blocks.SAND)));
     public static void registerModBlocks() {
         WhereIsMyMagic.LOGGER.info("Registering Modblocks for " + WhereIsMyMagic.MOD_ID);
     }

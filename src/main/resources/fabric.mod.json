@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"yaszu.whereismymagic.WhereIsMyMagicDataGenerator"
+		],
+		"client": [
+			"yaszu.whereismymagic.WhereIsMyMagicClient"
 		]
 	},
 	"mixins": [

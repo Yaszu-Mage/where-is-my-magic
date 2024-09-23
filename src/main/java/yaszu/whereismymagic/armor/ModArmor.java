@@ -11,8 +11,8 @@ import yaszu.whereismymagic.item.ModItems;
 import java.util.function.Supplier;
 
 public enum ModArmor implements ArmorMaterial {
-    Crack("crack",555,5,26, SoundEvents.BLOCK_ANVIL_LAND, Ingredient.ofItems(ModItems.CRACK),2,2),
-    Marble("marble", 455,4,26,SoundEvents.BLOCK_STONE_BREAK,Ingredient.ofItems(ModBlocks.MARBEL),0,0)
+    Crack("crack",555,5,26, SoundEvents.BLOCK_ANVIL_LAND,Ingredient.ofItems(ModItems.CRACK),2,2),
+    Marble("marble", 455,4,26,SoundEvents.BLOCK_STONE_BREAK,Ingredient.ofItems(ModBlocks.MARBEL),0,0),
     ;
     private final String name;
     private final int durability;
@@ -20,8 +20,8 @@ public enum ModArmor implements ArmorMaterial {
     private final int enchant;
     private final SoundEvent sound;
     private final Ingredient repairingredient;
-    private final int toughness;
-    private final int knockback;
+    private final float toughness;
+    private final float knockback;
 
     ModArmor(String name, int durability, int protection, int enchant, SoundEvent sound, Ingredient repairingredient, int toughness, int knockback) {
         this.name = name;

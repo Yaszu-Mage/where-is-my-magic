@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import yaszu.whereismymagic.block.ModBlocks;
@@ -19,11 +20,16 @@ import yaszu.whereismymagic.mobs.custom.RugEntity;
 
 public class WhereIsMyMagic implements ModInitializer {
 	public static final String MOD_ID = "where-is-my-magic";
-
+	public static final Identifier SOUL_TYPE = new Identifier(MOD_ID,"soul_type");
+	private Integer Soultypeint = 0;
+	// 0 = Soulless, 1 = Determination, 2=Paitience, 3=Animosity
+	// 4 = Monster, 5 = Justice, 6 = Bravery, 7 = Integrity
+	// 8 = Perserverence, 9 = Kindness
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
 
 	@Override
 	public void onInitialize() {
@@ -36,7 +42,9 @@ public class WhereIsMyMagic implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		FabricDefaultAttributeRegistry.register(ModEntities.RUG, RugEntity.createRugAttributes());
 		EntityRendererRegistry.register(ModEntities.RUG,RugRenderer::new);
-		
+
+
 
 	}
+
 }

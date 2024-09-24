@@ -12,11 +12,11 @@ import yaszu.whereismymagic.mobs.custom.RugEntity;
 public class RugRenderer extends MobEntityRenderer<RugEntity,Rug<RugEntity>> {
     private static final Identifier TEXTURE = new Identifier(WhereIsMyMagic.MOD_ID, "textures/entity/rug.png");
     public RugRenderer(EntityRendererFactory.Context context, Rug<RugEntity> entityModel, float f) {
-        super(context, new Rug(context.getPart(ModModelLayers.RUG)), 0.6f);
+        super(context, new Rug(context.getPart(ModModelLayers.RUG)), 0.2f);
     }
 
     public RugRenderer(EntityRendererFactory.Context context) {
-        super(context,new Rug(context.getPart(ModModelLayers.RUG)),0.6f);
+        super(context,new Rug(context.getPart(ModModelLayers.RUG)),0.2f);
     }
 
     @Override

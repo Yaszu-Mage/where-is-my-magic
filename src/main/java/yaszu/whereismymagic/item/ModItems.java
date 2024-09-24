@@ -1,5 +1,6 @@
  package yaszu.whereismymagic.item;
 
+import dev.emi.trinkets.api.TrinketItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -15,6 +16,8 @@ import yaszu.whereismymagic.item.custom.CrackStaff;
 import yaszu.whereismymagic.item.custom.MetalDetectorItem;
 import yaszu.whereismymagic.item.custom.guiopener;
 import yaszu.whereismymagic.item.custom.sponge_bong;
+import yaszu.whereismymagic.trinkets.determinationglove;
+import yaszu.whereismymagic.trinkets.patienceaglet;
 
  public class ModItems {
 
@@ -31,6 +34,10 @@ import yaszu.whereismymagic.item.custom.sponge_bong;
     public static final Item HUMAN_FLESH = registerItem("human_flesh", new Item(new FabricItemSettings().food(FoodComponents.BEEF)));
     public static final Item VOID_INGOT = registerItem("void_ingot", new Item(new FabricItemSettings()));
     public static final Item Cobalt = registerItem("cobalt", new Item(new FabricItemSettings()));
+
+
+    public static final Item PAITIENCEAGLET = registerItem("paitence_aglet", new patienceaglet(new FabricItemSettings()));
+    public static final Item DETERMINATIONGLOVE = registerItem("determination_glove", new determinationglove(new FabricItemSettings()));
 
 
     public static final Item GUIOPENER = registerItem("guiopener", new guiopener(new FabricItemSettings()));

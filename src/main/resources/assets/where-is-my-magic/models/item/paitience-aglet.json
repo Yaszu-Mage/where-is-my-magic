@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "where-is-my-magic:item/patience_aglet"
-  }
-}

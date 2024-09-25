@@ -3,6 +3,8 @@
     "player"
   ],
   "slots": [
-    "feet/aglet"
+    "feet/aglet",
+    "legs/belt",
+    "hand/glove"
   ]
 }

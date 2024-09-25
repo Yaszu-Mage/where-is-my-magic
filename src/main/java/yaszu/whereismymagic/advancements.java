@@ -35,7 +35,7 @@ public class advancements implements DataGeneratorEntrypoint {
                             true,
                             true
                             )
-                    .criterion("got_crack", InventoryChangedCriterion.Conditions.items((ModItems.CRACK)))
+                    .criterion("get_crack", InventoryChangedCriterion.Conditions.items((ModItems.CRACK)))
                     .build(consumer, "where-is-my-magic" + "/root");
         }
     }

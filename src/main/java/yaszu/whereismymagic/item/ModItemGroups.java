@@ -31,6 +31,9 @@ public class ModItemGroups {
                     entries.add(ModItems.CRACK_STAFF);
                     entries.add(ModItems.CRACK_HELMET);
                     entries.add(ModItems.ESTROGEN);
+                    entries.add(ModItems.DETERMINATIONGLOVE);
+                    entries.add(ModItems.PAITIENCEAGLET);
+
                     }).build());
 
 

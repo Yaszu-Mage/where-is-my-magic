@@ -1,10 +1,10 @@
  package yaszu.whereismymagic.item;
 
-import dev.emi.trinkets.api.TrinketItem;
+import software.bernie.geckolib.animatable.GeoItem;
+import yaszu.whereismymagic.geo.orca;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -17,6 +17,8 @@ import yaszu.whereismymagic.item.custom.MetalDetectorItem;
 import yaszu.whereismymagic.item.custom.guiopener;
 import yaszu.whereismymagic.item.custom.sponge_bong;
 import yaszu.whereismymagic.trinkets.determinationglove;
+import yaszu.whereismymagic.trinkets.ducktape;
+import yaszu.whereismymagic.trinkets.highlighter;
 import yaszu.whereismymagic.trinkets.patienceaglet;
 
  public class ModItems {
@@ -36,8 +38,13 @@ import yaszu.whereismymagic.trinkets.patienceaglet;
     public static final Item Cobalt = registerItem("cobalt", new Item(new FabricItemSettings()));
 
 
+    public static final Item ORCA = registerItem("orca", new orca(new FabricItemSettings()));
+
+
     public static final Item PAITIENCEAGLET = registerItem("paitence_aglet", new patienceaglet(new FabricItemSettings()));
     public static final Item DETERMINATIONGLOVE = registerItem("determination_glove", new determinationglove(new FabricItemSettings()));
+    public static final Item DUCKTAPE = registerItem("ducktape", new ducktape(new FabricItemSettings()));
+    public static final Item HIGHLIGHTER = registerItem("highlighter", new highlighter(new FabricItemSettings()));
 
 
     public static final Item GUIOPENER = registerItem("guiopener", new guiopener(new FabricItemSettings()));

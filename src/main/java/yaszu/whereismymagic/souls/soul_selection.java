@@ -8,6 +8,7 @@ import io.wispforest.owo.ui.container.FlowLayout;
 import io.wispforest.owo.ui.core.*;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.texture.Sprite;
@@ -27,7 +28,8 @@ public class soul_selection extends BaseOwoScreen<FlowLayout> {
    
     public ArrayList<Component> children = new ArrayList<Component>();
     
-    public PlayerEntity player = this.client.player;
+    public PlayerEntity player = MinecraftClient.getInstance().player;
+
     @Override
     protected @NotNull OwoUIAdapter<FlowLayout> createAdapter() {
         return OwoUIAdapter.create(this, Containers::verticalFlow);
@@ -41,31 +43,31 @@ public class soul_selection extends BaseOwoScreen<FlowLayout> {
         ));
         children.add(Components.button(
                 Text.literal("Patience"),
-                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"determination")
+                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"patience")
         ));
         children.add(Components.button(
                 Text.literal("Bravery"),
-                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"determination")
+                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"bravery")
         ));
         children.add(Components.button(
                 Text.literal("Justice"),
-                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"determination")
+                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"justice")
         ));
         children.add(Components.button(
                 Text.literal("Perseverance"),
-                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"determination")
+                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"perseverance")
         ));
         children.add(Components.button(
                 Text.literal("Kindness"),
-                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"determination")
+                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"kindness")
         ));
         children.add(Components.button(
                 Text.literal("Monster"),
-                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"determination")
+                button -> yaszu.whereismymagic.util.souldata.addSoulData(((IEntityDataSaver) player),"monster")
         ));
         children.add(Components.textArea(
-                Sizing.content(),
-                Sizing.content(),
+                Sizing.fill(5),
+                Sizing.fill(5),
                 "WARNING CHOOSING SOUL-LESS WILL MAKE YOU UNABLE TO USE MAGIC"
                 ));
 
@@ -81,7 +83,7 @@ public class soul_selection extends BaseOwoScreen<FlowLayout> {
                 .verticalAlignment(VerticalAlignment.CENTER);
         rootComponent.child(
                 Containers.verticalFlow(Sizing.content(),Sizing.content())
-                        .child(Components.textArea(Sizing.content(),Sizing.content()))
+                        
                         .children(1, children)
                                 
                 
@@ -93,9 +95,6 @@ public class soul_selection extends BaseOwoScreen<FlowLayout> {
 
         
 
-        rootComponent.child(
-                Components.textArea(Sizing.fill(25),Sizing.fill(25),"Soul Selection")
-        );
     }
 
 

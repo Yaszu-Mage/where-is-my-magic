@@ -33,6 +33,8 @@ public class ModItemGroups {
                     entries.add(ModItems.ESTROGEN);
                     entries.add(ModItems.DETERMINATIONGLOVE);
                     entries.add(ModItems.PAITIENCEAGLET);
+                    entries.add(ModItems.ANTIMAGICRING);
+                    entries.add(ModItems.KINDNESSBELT);
 
                     }).build());
 

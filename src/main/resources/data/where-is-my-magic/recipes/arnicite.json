@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:iron_ingot"
+  },
+  "base": {
+    "item": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "item": "where-is-my-magic:arnicite"
+  }
+}

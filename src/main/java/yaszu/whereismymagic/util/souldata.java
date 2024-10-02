@@ -9,6 +9,11 @@ public class souldata {
         nbt.putString("soul", soul);
         return soul;
     }
+    public static String readSoulData(IEntityDataSaver player){
+        NbtCompound nbt = player.getPersistentData();
+        String soul = nbt.getString("soul");
+        return soul;
+    }
 
 
 
